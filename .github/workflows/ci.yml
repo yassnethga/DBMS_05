@@ -1,0 +1,20 @@
+name: SQLite CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install SQLite
+        run: sudo apt-get install -y sqlite3
+
+      - name: Build DB
+        run: |
+          sqlite3 test.db < schema.sql
+          sqlite3 test.db < data.sql
