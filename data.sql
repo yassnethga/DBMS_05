@@ -20,15 +20,15 @@ INSERT INTO exemplar VALUES (6,'978-1','B2');
 -- =========================
 -- MEMBERS
 -- =========================
-INSERT INTO mitglied (mitglied_id, nachname, vorname, geburtsdatum, email, beitritt_datum, telefon)
-VALUES (1,'Mustermann','Max','2000-01-01','max@test.de','2020-01-01', NULL);
+-- MEMBERS
+INSERT INTO mitglied (mitglied_id, nachname, vorname, geburtsdatum, email, beitritt_datum)
+VALUES (1,'Mustermann','Max','2000-01-01','max@test.de','2020-01-01');
 
-INSERT INTO mitglied (mitglied_id, nachname, vorname, geburtsdatum, email, beitritt_datum, telefon)
-VALUES (2,'Sommer','Klara','1985-11-30','klara@test.de','2019-03-15', NULL);
+INSERT INTO mitglied (mitglied_id, nachname, vorname, geburtsdatum, email, beitritt_datum)
+VALUES (2,'Sommer','Klara','1985-11-30','klara@test.de','2019-03-15');
 
-INSERT INTO mitglied (mitglied_id, nachname, vorname, geburtsdatum, email, beitritt_datum, telefon)
-VALUES (3,'Hartmann','Lea','1998-07-08','lea@test.de','2021-01-01', NULL);
-
+INSERT INTO mitglied (mitglied_id, nachname, vorname, geburtsdatum, email, beitritt_datum)
+VALUES (3,'Hartmann','Lea','1998-07-08','lea@test.de','2021-01-01');
 -- =========================
 -- LOANS
 -- =========================
